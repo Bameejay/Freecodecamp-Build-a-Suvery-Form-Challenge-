@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Career Interest Survey Form</title>
+</head>
+
+<body>
+    <form action="#">
+        <div class="container">
+            <h1>Career Interest Survey</h1>
+            <p>Complete our Career Interest Survey to help you find the career best suited for you, based on your personal profile.<br> This will help us evaluate your opportunities and give you an informative report.</p>
+            <hr>
+
+            <label for="Name">Full-Name</label>
+            <input type="text" placeholder="Enter Your Full-Name" name="Full-name" id="name-label" required>
+
+            <label for="Email">Email</label>
+            <input type="email" placeholder="username@example.com" name="email" id="email-label" size="30" required>
+
+            <label for="Age">Age</label>
+            <input type="number" placeholder="How old are you?" name="Age" id="number label" min="15" max="50" pattern="0123456789" required>
+
+            <p>Gender</p>
+            <input type="radio" name="gender" id="gender" value="M">
+            <label for="Gender">M</label><br>
+            <input type="radio" name="gender" id="gender" value="F">
+            <label for="Gender">F</label>
+
+            <p>What is your current career? Does it match your dream career?</p>
+            <textarea name="dream-career" id="" cols="50" rows="5" minlength="5" maxlength="250" required></textarea>
+
+            <p>What are your career goals as of now?</p>
+            <textarea name="career-goal" id="" cols="50" rows="5" minlength="5" maxlength="250" required></textarea>
+
+            <p>If you had the chance to change your current career field, would you do it?</p>
+            <input type="radio" name="Chng-career-field" id="chng-caree-field">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" name="Chng-career-field" id="chng-caree-field">
+            <label for="No">No</label>
+
+            <p>Fields you are interested in:</p>
+            <input type="checkbox" name="Mathematics" id="Maths" value="Mathemaics">
+            <label for="Maths">Mathemaics</label><br>
+
+            <input type="checkbox" name="Mathematics" id="Maths" value="Mathemaics">
+            <label for="Agriculture">Agriculture</label><br>
+
+            <input type="checkbox" name="Mathematics" id="Maths" value="Mathemaics">
+            <label for="IT Programming">IT Programming</label><br>
+
+            <input type="checkbox" name="Mathematics" id="Maths" value="Mathemaics">
+            <label for="Law">Law</label><br>
+
+            <input type="checkbox" name="Mathematics" id="Maths" value="Mathemaics">
+            <label for="Politics">Politics</label><br>
+
+            <input type="checkbox" name="Mathematics" id="Maths" value="Mathemaics">
+            <label for="Marketing">Marketing</label><br>
+
+            <label for="Personal">Personal Qualities:</label><br>
+            <input type="text" list="dropdown" name="Personal-qualities" id="Pers-qual" required>
+
+            <datalist id="dropdown">
+                <option value="Fast Learner"></option>
+                <option value="Self Educated"></option>
+                <option value="Organized"></option>
+            </datalist>
+
+            <button type="submit">Submit Career Interest Survey</button>
+
+        </div>
+    </form>
+</body>
+
+</html>
